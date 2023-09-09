@@ -7,7 +7,7 @@ export const Form = () => {
   const dispatch = useDispatch();
   const contactsList = useSelector(getContactsList);
   const [ name, setName ] = useState('');
-  const [ Number, setNumber ] = useState('');
+  const [ number, setNumber ] = useState('');
 
   const handleChange = e => {
     const { name, value } = e.target;
