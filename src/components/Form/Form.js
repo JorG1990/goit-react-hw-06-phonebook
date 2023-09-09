@@ -1,7 +1,8 @@
 import { nanoid } from "@reduxjs/toolkit";
 import { FromStyled } from "components/Filter/Filter.styled";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux";
+import { Report } from "notiflix";
 
 export const Form = () => {
   const dispatch = useDispatch();
