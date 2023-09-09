@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Table } from "./Contacts.styled";
 
 export const Contacts = () => {
     const dispatch = useDispatch();
