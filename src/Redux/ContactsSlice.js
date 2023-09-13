@@ -1,6 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+
+const { createSlice } = require("@reduxjs/toolkit");
+
 
 
 const contactsSlice = createSlice ({
@@ -18,7 +21,7 @@ const contactsSlice = createSlice ({
       state.list = [...state.list, action.payload];
     },
     deleteContact(state, action) {
-      state.list = state.list.filter(Contact => Contact.id !== action.payload);
+      state.list = state.list.filter(contact => contact.id !== action.payload);
     },
   },
 });
