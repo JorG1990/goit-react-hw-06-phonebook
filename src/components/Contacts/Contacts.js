@@ -16,13 +16,13 @@ export const Contacts = () => {
             <tbody>
                 {filteredContacts.map(({ id, name, number}) => {
                     return (
-                        <tr ket={ id }>
-                            <td>{ name }</td>
-                            <td>{ number }</td>
-                            <td>
-                                <button onClick={() => deleteContacts(id)}>Delete</button>
-                            </td>
-                        </tr>
+                      <tr ket={ id }>
+                          <td>{ name }</td>
+                          <td>{ number }</td>
+                          <td>
+                            <button onClick={() => deleteContacts(id)}>Delete</button>
+                          </td>
+                      </tr>
                     )
                 })}
             </tbody>
