@@ -1,11 +1,11 @@
 import { useDispatch } from "react-redux/es/exports";
-import { FromStyled } from "./Form.styled";
+import { FormStyled } from "./Form.styled";
 import { filterContacts } from "Redux/FilterSlice";
 
 export const Filter = () => {
   const dispatch =useDispatch();
   return (
-    <FromStyled>
+    <FormStyled>
       <label>
         Find  contacts by name
         <input
@@ -16,6 +16,6 @@ export const Filter = () => {
         onChange={e => dispatch(filterContacts(e.target.value))}
         ></input>
       </label>
-    </FromStyled>
+    </FormStyled>
   );
 };
