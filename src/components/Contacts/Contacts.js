@@ -1,9 +1,11 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux/es/exports";
 import { Table } from "./Contacts.styled";
+import { deleteContact } from "Redux/ContactsSlice";
+import { getContactsList, getFilter } from "Redux/Selectors";
 
 export const Contacts = () => {
     const dispatch = useDispatch();
-    const contactsList = useSelector(getContactList);
+    const contactsList = useSelector(getContactsList);
     const filterQuery = useSelector(getFilter);
     const normalizedFilter = filterQuery.toLowerCase();
     const filteredContacts = contactsList.filter(Contact => Contact.name.toLowerCase().includes(normalizedFilter));
@@ -16,7 +18,7 @@ export const Contacts = () => {
             <tbody>
                 {filteredContacts.map(({ id, name, number}) => {
                     return (
-                      <tr ket={ id }>
+                      <tr key={ id }>
                           <td>{ name }</td>
                           <td>{ number }</td>
                           <td>

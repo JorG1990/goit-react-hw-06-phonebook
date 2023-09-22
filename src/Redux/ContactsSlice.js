@@ -2,7 +2,7 @@
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-const { createSlice } = require("@reduxjs/toolkit");
+import { createSlice } from "@reduxjs/toolkit";
 
 
 

@@ -1,8 +1,11 @@
 import { nanoid } from "@reduxjs/toolkit";
-import { FromStyled } from "components/Filter/Filter.styled";
+import { FromStyled } from "components/Filter/Form.styled";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Report } from "notiflix";
+import { addContact } from "Redux/ContactsSlice";
+import { getContactsList } from "Redux/Selectors";
+
 
 export const Form = () => {
   const dispatch = useDispatch();
@@ -50,20 +53,20 @@ export const Form = () => {
 
   return (
     <div>
-      <FromStyled onSubmit={handleSubmit}>
+      <FromStyled onSubmit={ handleSubmit }>
         <label>
           Name
           <input
-          className="name"
-          type="text"
-          name="name"
-          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-          required
-          value={ name }
-          onChange={ handleChange }
-          />
-        </label>
+            className="name"
+            type="text"
+            name="name"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            required
+            value={ name }
+            onChange={ handleChange }
+            />
+          </label>
 
         <label>
           Number

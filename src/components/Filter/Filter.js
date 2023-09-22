@@ -1,5 +1,6 @@
-import { useDispatch } from "react-redux";
-import { FromStyled } from "./Filter.styled";
+import { useDispatch } from "react-redux/es/exports";
+import { FromStyled } from "./Form.styled";
+import { filterContacts } from "Redux/FilterSlice";
 
 export const Filter = () => {
   const dispatch =useDispatch();
