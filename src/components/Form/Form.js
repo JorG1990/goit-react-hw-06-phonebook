@@ -1,5 +1,5 @@
 import { nanoid } from "@reduxjs/toolkit";
-import { FromStyled } from "components/Filter/Form.styled";
+import { FormStyled } from "components/Filter/Form.styled";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Report } from "notiflix";
@@ -53,7 +53,7 @@ export const Form = () => {
 
   return (
     <div>
-      <FromStyled onSubmit={ handleSubmit }>
+      <FormStyled onSubmit={ handleSubmit }>
         <label>
           Name
           <input
@@ -81,7 +81,7 @@ export const Form = () => {
           />
         </label>
         <button type="submit">Add contact</button>
-      </FromStyled>
+      </FormStyled>
     </div>
   );
 };
