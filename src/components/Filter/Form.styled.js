@@ -11,7 +11,7 @@ export const FormStyled = styled.form`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: white;
+    color: black;
   }
 
   & input {
@@ -28,7 +28,7 @@ export const FormStyled = styled.form`
 
   & button {
     padding: 5px 10px;
-    background-color: #f0f0f0;
+    background-color: #15C4BC;
     border: 0px;
     border-radius: 5px;
     cursor: pointer;
@@ -36,8 +36,8 @@ export const FormStyled = styled.form`
   }
 
   & button:hover {
-    background-color: #1a73e8;
-    color: white;
+    background-color: #AD2609;
+    color: #0AF305;
     transform: scale(1.05);
   }
 

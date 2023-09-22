@@ -11,7 +11,7 @@ export const Table = styled.table`
   & td {
     padding: 10px;
     text-align: left;
-    color: white;
+    color: #11620F;
   }
 
   & td:first-child {
@@ -20,7 +20,7 @@ export const Table = styled.table`
 
   & button {
     padding: 8px 10px;
-    background-color: white;
+    background-color: #15C4BC;
     border: 0px;
     border-radius: 6px;
     cursor: pointer;
@@ -28,8 +28,8 @@ export const Table = styled.table`
   }
 
   & button:hover {
-    background-color: #1a73e8;
-    color: white;
+    background-color: #AD2609;
+    color: #0AF305;
     transform: scale(1.05);
   }
 `;
