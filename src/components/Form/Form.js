@@ -3,8 +3,8 @@ import { FormStyled } from "components/Filter/Form.styled";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Report } from "notiflix";
-import { addContact } from "redux/contactsSlice";
-import { getContactsList } from "redux/selectors";
+import { addContact } from "Redux/ContactsSlice";
+import { getContactsList } from "Redux/Selectors";
 
 
 export const Form = () => {
