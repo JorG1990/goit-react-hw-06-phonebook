@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux/es/exports";
 import { Table } from "./Contacts.styled";
-import { deleteContact } from "Redux/contactsSlice";
-import { getContactsList, getFilter } from "Redux/Selectorsors";
+import { deleteContact } from "Redux/ContactsSlice";
+import { getContactsList, getFilter } from "Redux/Selectors";
 
 export const Contacts = () => {
     const dispatch = useDispatch();
